@@ -7,6 +7,7 @@ target 'APISignUp' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
   pod 'Alamofire', '~> 4.3'
+  pod 'SkyFloatingLabelTextField', '~> 2.0.0'
   # Pods for APISignUp
 
 end

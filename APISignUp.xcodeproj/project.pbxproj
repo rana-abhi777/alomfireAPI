@@ -14,6 +14,8 @@
 		1D3575561E5B1CB100E01A3A /* APISignUp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1D3575541E5B1CB100E01A3A /* APISignUp.xcdatamodeld */; };
 		1D3575581E5B1CB100E01A3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D3575571E5B1CB100E01A3A /* Assets.xcassets */; };
 		1D35755B1E5B1CB100E01A3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D3575591E5B1CB100E01A3A /* LaunchScreen.storyboard */; };
+		1DFD74461E5BF04400312323 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFD74451E5BF04400312323 /* SignInViewController.swift */; };
+		1DFD74481E5BF5F500312323 /* ModelClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFD74471E5BF5F500312323 /* ModelClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		1D3575571E5B1CB100E01A3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D35755A1E5B1CB100E01A3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D35755C1E5B1CB100E01A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DFD74451E5BF04400312323 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		1DFD74471E5BF5F500312323 /* ModelClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelClass.swift; sourceTree = "<group>"; };
 		34F85B9741630A795F3BC428 /* Pods_APISignUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APISignUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71FFB3CABF52E92A3C277F29 /* Pods-APISignUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APISignUp.release.xcconfig"; path = "Pods/Target Support Files/Pods-APISignUp/Pods-APISignUp.release.xcconfig"; sourceTree = "<group>"; };
 		FF36CE103CB7D0C60492833F /* Pods-APISignUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APISignUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APISignUp/Pods-APISignUp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 				1D3575591E5B1CB100E01A3A /* LaunchScreen.storyboard */,
 				1D35755C1E5B1CB100E01A3A /* Info.plist */,
 				1D3575541E5B1CB100E01A3A /* APISignUp.xcdatamodeld */,
+				1DFD74451E5BF04400312323 /* SignInViewController.swift */,
+				1DFD74471E5BF5F500312323 /* ModelClass.swift */,
 			);
 			path = APISignUp;
 			sourceTree = "<group>";
@@ -214,6 +220,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DFD74481E5BF5F500312323 /* ModelClass.swift in Sources */,
+				1DFD74461E5BF04400312323 /* SignInViewController.swift in Sources */,
 				1D3575501E5B1CB100E01A3A /* ViewController.swift in Sources */,
 				1D3575561E5B1CB100E01A3A /* APISignUp.xcdatamodeld in Sources */,
 				1D35754E1E5B1CB100E01A3A /* AppDelegate.swift in Sources */,
@@ -378,6 +386,7 @@
 				1D3575611E5B1CB100E01A3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
