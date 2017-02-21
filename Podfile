@@ -8,6 +8,7 @@ target 'APISignUp' do
   use_frameworks!
   pod 'Alamofire', '~> 4.3'
   pod 'SkyFloatingLabelTextField', '~> 2.0.0'
+  pod 'ObjectMapper', '~> 2.2'
   # Pods for APISignUp
 
 end
