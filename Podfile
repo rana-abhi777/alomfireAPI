@@ -9,6 +9,7 @@ target 'APISignUp' do
   pod 'Alamofire', '~> 4.3'
   pod 'SkyFloatingLabelTextField', '~> 2.0.0'
   pod 'ObjectMapper', '~> 2.2'
+  pod 'M13Checkbox'
   # Pods for APISignUp
 
 end

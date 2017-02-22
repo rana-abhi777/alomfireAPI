@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import ObjectMapper
 
 class SignInViewController: UIViewController {
 
@@ -31,8 +33,36 @@ class SignInViewController: UIViewController {
         alertController.addAction(OKAction)
         self.present(alertController, animated: true, completion: nil)
     }
+    /*
+    func fetchData() {
+        
+        let param:[String:Any] = ["username": txtName.text ?? "",
+                                  "email" : txtEmail.text ?? "",
+                                  "password" : txtPassword.text ?? "",
+                                  "phone" : txtPhoneNumber.text ?? "",
+                                  "country" : txtCountry.text ?? "",
+                                  "city" : txtCity.text ?? "",
+                                  "address" : txtAddress.text ?? "",
+                                  "flag" : 1,
+                                  "birthday" : "10/11/1995",
+                                  "country_code" : "91",
+                                  "postal_code" : "160047",
+                                  "country_iso3" : "IND",
+                                  "state" : "Himachal Pradesh"]
 
-    
+        
+        ApiHandler.fetchData(urlStr: "login", parameters: param) { (jsonData) in
+            // print(jsonData)
+            let userModel = Mapper<User>().map(JSONObject: jsonData)
+            
+            print(userModel?.msg ?? "")
+            print(userModel?.profile?.username ?? "")
+            print(userModel?.profile?.phone ?? "")
+            
+
+        }
+    }
+    */
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -58,11 +88,29 @@ class SignInViewController: UIViewController {
         if ((txtPassword.text?.characters.count)! < 5) {
             genericAlertMessage(theTitle: "Alert!", theMessage: "Password cannot be less than 5 characters.")
         }
-        if ((ModelClass.validateMobileNo(value: txtPhoneNumber.text!))) {
+        if (!(ModelClass.validateMobileNo(value: txtPhoneNumber.text!))) {
             genericAlertMessage(theTitle: "Error!", theMessage: "Other than digits in phonenumber field.")
         }
-        // validate the country as welle as city ???
+        //fetchData()
         
+        let param : [String : Any] = ["username": txtName.text ?? "",
+                                       "email" : txtEmail.text ?? "",
+                                       "password" : txtPassword.text ?? "",
+                                       "phone" : txtPhoneNumber.text ?? "",
+                                       "country" : txtCountry.text ?? "",
+                                       "city" : txtCity.text ?? "",
+                                       "address" : txtAddress.text ?? "",
+                                       "flag" : 1,
+                                       "birthday" : "10/11/1995",
+                                       "country_code" : "91",
+                                       "postal_code" : "160047",
+                                       "country_iso3" : "INDIA",
+                                       "state" : "Himachal Pradesh"]
+            ApiHandler.fetchData(urlStr: "signup", parameters: param) { (jsonData) in
+                _ = Mapper<User>().map(JSONObject : jsonData)
+                print("Successfully added")
+        }
+ 
     }
 }
 extension SignInViewController: UITextFieldDelegate {
